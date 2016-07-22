@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5A6DA186-84C8-45E6-B4C5-4D7EDE52DFCE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Matventura</RootNamespace>
+    <AssemblyName>Matventura</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ContNou.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContNou.Designer.cs">
+      <DependentUpon>ContNou.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cst_messagebox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cst_messagebox.Designer.cs">
+      <DependentUpon>cst_messagebox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flags.cs" />
+    <Compile Include="frmMuzica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMuzica.Designer.cs">
+      <DependentUpon>frmMuzica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAlege.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAlege.Designer.cs">
+      <DependentUpon>frmAlege.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAventura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAventura.Designer.cs">
+      <DependentUpon>frmAventura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCampanie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCampanie.Designer.cs">
+      <DependentUpon>frmCampanie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreare.Designer.cs">
+      <DependentUpon>frmCreare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEditare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditare.Designer.cs">
+      <DependentUpon>FrmEditare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEvaluare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEvaluare.Designer.cs">
+      <DependentUpon>frmEvaluare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFunctii.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFunctii.Designer.cs">
+      <DependentUpon>frmFunctii.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLectii.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLectii.Designer.cs">
+      <DependentUpon>frmLectii.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMoolka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMoolka.Designer.cs">
+      <DependentUpon>frmMoolka.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOras.Designer.cs">
+      <DependentUpon>frmOras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProfil.Designer.cs">
+      <DependentUpon>frmProfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTurn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTurn.Designer.cs">
+      <DependentUpon>frmTurn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ContNou.resx">
+      <DependentUpon>ContNou.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cst_messagebox.resx">
+      <DependentUpon>cst_messagebox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMuzica.resx">
+      <DependentUpon>frmMuzica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAlege.resx">
+      <DependentUpon>frmAlege.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAventura.resx">
+      <DependentUpon>frmAventura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCampanie.resx">
+      <DependentUpon>frmCampanie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCreare.resx">
+      <DependentUpon>frmCreare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditare.resx">
+      <DependentUpon>FrmEditare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEvaluare.resx">
+      <DependentUpon>frmEvaluare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFunctii.resx">
+      <DependentUpon>frmFunctii.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLectii.resx">
+      <DependentUpon>frmLectii.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMoolka.resx">
+      <DependentUpon>frmMoolka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOras.resx">
+      <DependentUpon>frmOras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProfil.resx">
+      <DependentUpon>frmProfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTurn.resx">
+      <DependentUpon>frmTurn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
